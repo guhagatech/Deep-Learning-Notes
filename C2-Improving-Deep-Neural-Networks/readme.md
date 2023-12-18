@@ -86,15 +86,17 @@ Setting up the training, development (dev, also called validate set) and test se
 
 To understand bias and variance better, read this essay: [Understanding the Bias-Variance Tradeoff][bias-variance-tradeoff].
 
-#### Bisic Recipe for Machine Learning
+#### Basic Recipe for Machine Learning
 
-![bias-variance-tradeoff](img/bias-variance-tradeoff.png)
+<img width="608" alt="image" src="https://github.com/guhagatech/Deep-Learning-Notes/assets/68080620/94de7a3b-eb8d-4602-be4f-38a51ddb8903">
 
 - For a high bias problem, getting more training data is actually not going to help. 
 - Back in the pre-deep learning era, we didn't have as many tools that just reduce bias or that just reduce variance without hurting the other one.
 - In the modern deep learning, big data era, getting a bigger network and more data almost always just reduces bias without necessarily hurting your variance, so long as you regularize appropriately. 
 - This has been one of the big reasons that deep learning has been so useful for supervised learning.
 - The main cost of training a big neural network is just computational time, so long as you're regularizing. 
+
+
 
 ### Regularizing your neural network
 
@@ -205,6 +207,9 @@ For a single neuron, suppose we have `n` features for the input layer, then we w
 - It is however okay to initialize the biases `b[l]` to zeros. Symmetry is still broken so long as `W[l]` is initialized randomly.
 - Initializing weights to very large random values does not work well.
 - Hopefully intializing with small random values does better. The important question is: how small should be these random values be? He initialization works well for networks with ReLU activations. In other cases, try other initializations.
+
+<img width="931" alt="image" src="https://github.com/guhagatech/Deep-Learning-Notes/assets/68080620/95d017d6-0a5e-4fa8-9d48-983ec3611213">
+
 
 #### Numerical approximation of gradients
 
