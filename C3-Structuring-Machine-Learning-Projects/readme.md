@@ -87,6 +87,8 @@ Orthogonal means at 90 degrees to each other. By having orthogonal controls that
 | Fit test set well on cost function | bigger dev set |
 | Performs well in real world | change dev set or cost function<br>(dev test set distribution not correct or cost function not right) |
 
+<img width="478" alt="image" src="https://github.com/guhagatech/Deep-Learning-Notes/assets/68080620/3e5dbab1-16f9-4ef7-8e84-542bc741a9ae">
+
 Early stopping, though not a bad technique, is a *knob* that simultaneously affects the training set and dev set performance, and therefore is **less orthogonalized**, so Andrew tend not to use it.
 
 ### Setting up your goal
